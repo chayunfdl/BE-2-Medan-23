@@ -1,6 +1,7 @@
 const { DataTypes } = require('sequelize');
 const db = require('../config/database')
 
+// Model Order
 const Order = db.define(
   'Order',
   {

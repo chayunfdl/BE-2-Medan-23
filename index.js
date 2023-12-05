@@ -1,6 +1,6 @@
 const express = require('express')
 const dotenv = require('dotenv')
-const router = require('./routes/orderRouter')
+const router = require('./routes/orderRoutes')
 
 const db = require('./config/database')
 
@@ -10,6 +10,7 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 3000
 
+// using middleware body json
 app.use(express.json());
 
 // Using route middleware from orderRoutes
