@@ -1,6 +1,6 @@
 {
   "name": "be-2-medan-23-1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Welcome to the project repository for the Back End! This repository is dedicated to the Capstone Project in Software Engineering from Group 23 Section Medan, serving as the primary workspace for the back-end development, all crafted in JavaScript as part of the RevoU Capstone Project in Software Engineering.",
   "main": "index.js",
   "scripts": {
