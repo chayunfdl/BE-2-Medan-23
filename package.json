@@ -1,0 +1,25 @@
+{
+  "name": "be-2-medan-23-1",
+  "version": "1.0.0",
+  "description": "Welcome to the project repository for the Back End! This repository is dedicated to the Capstone Project in Software Engineering from Group 23 Section Medan, serving as the primary workspace for the back-end development, all crafted in JavaScript as part of the RevoU Capstone Project in Software Engineering.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chayunfdl/BE-2-Medan-23.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chayunfdl/BE-2-Medan-23/issues"
+  },
+  "homepage": "https://github.com/chayunfdl/BE-2-Medan-23#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
