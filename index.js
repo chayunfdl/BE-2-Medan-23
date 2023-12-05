@@ -1,5 +1,6 @@
 const express = require('express')
 const dotenv = require('dotenv')
+const router = require('./routes/orderRoutes')
 
 // using .env
 dotenv.config();
@@ -7,10 +8,8 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 3000
 
-// Hello world
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+// Using route middleware from orderRoutes
+app.use('/api', router);
 
 // Listen to internet
 app.listen(port, () => {
