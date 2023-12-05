@@ -1,14 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
-// Hello world
-router.use((req, res, next) => {
-  console.log("Time:", Date.now());
-  next();
-})
+const { orderData, addOrderData } = require('../controllers/orderController')
 
-router.get('/', (req, res, next) => {
-  res.send("Hello World")
-})
+router.get('/', orderData)
+router.post('/add', addOrderData)
 
 module.exports = router;

@@ -1,6 +1,8 @@
 const express = require('express')
 const dotenv = require('dotenv')
-const router = require('./routes/orderRoutes')
+const router = require('./routes/orderRouter')
+
+const db = require('./config/database')
 
 // using .env
 dotenv.config();
@@ -8,8 +10,19 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 3000
 
+app.use(express.json());
+
 // Using route middleware from orderRoutes
-app.use('/api', router);
+app.use('/orders', router);
+
+// Connect to database
+db.authenticate()
+  .then(() => {
+    console.log('Connected to the database.');
+  })
+  .catch((error) => {
+    console.error('Unable to connect to the database:', error);
+  });
 
 // Listen to internet
 app.listen(port, () => {
