@@ -4,6 +4,7 @@
   "description": "Welcome to the project repository for the Back End! This repository is dedicated to the Capstone Project in Software Engineering from Group 23 Section Medan, serving as the primary workspace for the back-end development, all crafted in JavaScript as part of the RevoU Capstone Project in Software Engineering.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/chayunfdl/BE-2-Medan-23#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2"
   }
 }
