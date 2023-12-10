@@ -1,6 +1,7 @@
 const express = require('express')
 const dotenv = require('dotenv')
 const router = require('./routes/orderRoutes')
+var cors = require('cors')
 
 const db = require('./config/database')
 
@@ -9,6 +10,9 @@ dotenv.config();
 
 const app = express()
 const port = process.env.PORT || 3000
+
+// Use cors
+app.use(cors())
 
 // using middleware body json
 app.use(express.json());
